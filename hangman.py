@@ -1,4 +1,7 @@
-word = "python"
+import random
+
+words = ["python", "laptop", "football", "pizza", "faro", "keyboard"]
+word = random.choice(words)
 guessed = []
 lives = 6
 
@@ -20,6 +23,12 @@ while True:
         break
 
     guess = input("Guess a letter: ").lower()
+    if len(guess) != 1:
+        print("Type ONE letter!")
+        continue
+    if guess in guessed:
+        print("You already tried that!")
+        continue
     guessed.append(guess)
 
     if guess in word:
