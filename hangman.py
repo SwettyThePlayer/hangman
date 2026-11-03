@@ -5,6 +5,8 @@ word = random.choice(words)
 guessed = []
 lives = 6
 
+print("=== HANGMAN GAME ===")
+
 while True:
     display = ""
     for letter in word:
@@ -12,11 +14,13 @@ while True:
             display = display + letter + " "
         else:
             display = display + "_ "
+    print()
     print(display)
-    print(f"Lives: {lives}")
+    print("Lives: " + "<3" * lives)
+    print("Tried: " + ", ".join(guessed))
 
     if "_" not in display:
-        print("You found it!")
+        print(f"You found it with {lives} lives! GG!")
         break
     if lives == 0:
         print(f"Game over! The word was {word}")
