@@ -6,33 +6,36 @@ A simple Hangman game built with Python! Guess the hidden word one letter at a t
 
 This project is a beginner-friendly implementation of the classic Hangman game.
 
-The game randomly selects a word from a predefined list and hides its letters. The player must guess the word one letter at a time. Every incorrect guess costs one life, so choose wisely!
+The game randomly selects a word from a predefined list and hides its letters.  
+The player must guess the word one letter at a time.  
+Every incorrect guess costs one life, so choose wisely!
 
 ## ✨ Features
-Random Words: A random word is selected at the start of the game.
-Hidden Word: Correctly guessed letters are revealed.
-Lives System: The player starts with 6 lives.
-Heart Counter: Remaining lives are displayed using <3 hearts.
-Tried Letters: Keeps track of all previously guessed letters.
-Input Validation: Checks if the player enters exactly one character.
-Repeated Guess Detection: Prevents guessing the same letter twice.
-Win Condition: Guess all the letters before running out of lives.
-Lose Condition: The game ends when all 6 lives are lost, revealing the correct word.
+- Random Words: A random word is selected at the start of the game.
+- Hidden Word: Correctly guessed letters are revealed.
+- Lives System: The player starts with 6 lives.
+- Heart Counter: Remaining lives are displayed using <3 hearts.
+- Tried Letters: Keeps track of all previously guessed letters.
+- Input Validation: Checks if the player enters exactly one character.
+- Repeated Guess Detection: Prevents guessing the same letter twice.
+- Win Condition: Guess all the letters before running out of lives.
+- Lose Condition: The game ends when all 6 lives are lost, revealing the correct word.
 ## 🛠️ Built With
-Python 3
-Random module
+- Python 3
+- Random module
 ## 🚀 How to Run
-Clone the repository:
-bash
-> git clone YOUR-REPOSITORY-LINK
-
+Clone the repository:  
+> bash
+```
+git clone YOUR-REPOSITORY-LINK
+```
 Navigate to the project folder:
-bash
+> bash
 ```
 cd YOUR-PROJECT-FOLDER
 ```
 Run the game:
-bash
+> bash
 ```
 python hangman.py
 ```
@@ -52,12 +55,12 @@ The game was developed in seven steps:
 
 The game currently chooses randomly from:
 
-python
-laptop
-football
-pizza
-faro
-keyboard
+- python
+- laptop
+- football
+- pizza
+- faro
+- keyboard
 ## 📖 What I Learned
 
 Through this project, I practised:
