@@ -16,7 +16,7 @@ while True:
             display = display + "_ "
     print()
     print(display)
-    print("Lives: " + "<3" * lives)
+    print("Lives: " + "<3 " * lives)
     print("Tried: " + ", ".join(guessed))
 
     if "_" not in display:
@@ -32,6 +32,9 @@ while True:
         continue
     if guess in guessed:
         print("You already tried that!")
+        continue
+    if not guess.isalpha():
+        print("Please type a letter!")
         continue
     guessed.append(guess)
 
