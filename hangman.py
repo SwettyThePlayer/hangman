@@ -1,5 +1,6 @@
 word = "python"
 guessed = []
+lives = 6
 
 while True:
     display = ""
@@ -9,10 +10,20 @@ while True:
         else:
             display = display + "_ "
     print(display)
+    print(f"Lives: {lives}")
 
     if "_" not in display:
         print("You found it!")
         break
+    if lives == 0:
+        print(f"Game over! The word was {word}")
+        break
 
     guess = input("Guess a letter: ").lower()
     guessed.append(guess)
+
+    if guess in word:
+        print("Yes!")
+    else:
+        lives = lives -1
+        print("No!")
